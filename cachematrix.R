@@ -7,10 +7,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
   invd<-NULL #set to null
   
-  
-  
-  
-  
   set <- function(matrix_to_invert) {
     x <<- matrix_to_invert #original matrix
     invd <<- NULL #reseting to null
@@ -18,24 +14,15 @@ makeCacheMatrix <- function(x = matrix()) {
   
   get <- function()x     #get otiginal matrix
   
-  
-  
-  
   setInversed<- function(solve) invd <<-solve
-  
   
   getInversed <- function() invd   #getting inverted
   
-    
   list(set = set, 
        get = get,
        setInversed = setInversed,
        getInversed = getInversed)
-} 
-  
-
-
-
+}
 
 ## Write a short comment describing this function
 
